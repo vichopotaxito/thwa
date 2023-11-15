@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>¡Bienvenido!</ion-title>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/login']" color="dark">
+        <ion-icon name="arrow-undo"></ion-icon> Cerrar Sesión
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card>
+  <img alt="meca" src="./assets/meca.jpg" />
+  <ion-card-header>
+    <ion-card-title>Taller Mecánico ServiExpress</ion-card-title>
+    <ion-card-subtitle>Atencion de primera calidad</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Nos encontramos en direccion Antonio Varas 666, Providencia, Región Metropolitana.
+    <ion-card-content>
+
+    </ion-card-content>Horarios de atencion Lunes a Sabado desde las 10:00 AM hasta las 20:00 PM. </ion-card-content>
+</ion-card>
+
+
+<ion-footer>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]= "['/catalog']">Catalogo</ion-button>
+    </ion-buttons>
+
+    <ion-footer >
+      <ion-toolbar color="medium">
+        <ion-buttons slot="end">
+          <ion-button [routerLink]= "['/reserva']">Reserva</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-footer>
