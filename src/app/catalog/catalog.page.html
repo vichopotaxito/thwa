@@ -1,0 +1,93 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>Catálogo</ion-title>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/bienvenida']">
+        <ion-icon name="arrow-undo"></ion-icon> Volver
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-list>
+
+    <!-- Servicio 1 -->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="./assets/kitauto.webp" alt="kitauto">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Kit para auto</h2>
+        <p>Kit de emergencia para automóviles.</p>
+        <p>Incluye 6 piezas: Guantes, Cable pasa corriente, Faro led, Manometro de presion, Poncho para lluvia, Kit primeros auxilios.</p>
+        <p>Precio: $8.000</p>
+      </ion-label>
+      <ion-button (click)="agregarAlCarrito(servicio1)"color="tertiary">Añadir al carrito</ion-button>
+    </ion-item>
+
+    <!-- Servicio 2 -->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="./assets/trabavol.webp" alt="trabavol">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>Traba volante tablero antirrobo</h2>
+        <p>Traba volante antirrobo de fácil uso.  Permitirá estacionar su automóvil de manera más segura, dado que posee un sistema de bloqueo que impide manipular el volante.</p>
+        <p>Precio: $11.990</p>
+      </ion-label>
+      <ion-button (click)="agregarAlCarrito(servicio2)"color="tertiary">Añadir al carrito</ion-button>
+    </ion-item>
+
+      <!-- Servicio 3 -->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="./assets/cuerda.webp" alt="trabavol">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>Cuerda remolque 4M</h2>
+            <p>Cuerda de remolque, hecha de material seguro y ganchos resistentes. Ideal para remolcar distintos tipos de vehículos.</p>
+            <p>Precio: $6.990</p>
+          </ion-label>
+          <ion-button (click)="agregarAlCarrito(servicio2)"color="tertiary">Añadir al carrito</ion-button>
+        </ion-item>
+
+      <!-- Servicio 4 -->
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="./assets/amarillo.webp" alt="trabavol">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Chaleco Reflectante</h2>
+          <p>Chaleco de seguridad reflectante, diseñado especialmente para aumentar su visibilidad en ruta y en oscuridad</p>
+          <p>Precio: $2.790</p>
+        </ion-label>
+        <ion-button (click)="agregarAlCarrito(servicio2)"color="tertiary">Añadir al carrito</ion-button>
+      </ion-item>
+
+      <!-- Servicio 5 -->
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="./assets/volante.webp" alt="volante">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Funda volante Negro/Rojo</h2>
+          <p>Funda cubre volante de material ligero, cómodo y agradable al tacto. Protección segura para tu vehículo.</p>
+          <p>Precio: $5.990</p>
+        </ion-label>
+        <ion-button (click)="agregarAlCarrito(servicio2)"color="tertiary">Añadir al carrito</ion-button>
+      </ion-item>
+
+
+      <!-- Servicio 6 -->
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="./assets/Fiugrande.webp" alt="Fiu">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>Peluche mascota Fiu juegos Santiago 2023 40CM</h2>
+          <p>Peluche oficial Santiago 2023, el peluche Fiú se caracteriza por su suavidad y colorido.</p>
+          <p>Su versión de 40 cms es ideal para los más pequeños de la casa.</p>
+          <p>Precio: $29.990</p>
+        </ion-label>
+        <ion-button (click)="agregarAlCarrito(servicio2)"color="tertiary">Añadir al carrito</ion-button>
+      </ion-item>

@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>Reserva de hora</ion-title>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/bienvenida']">
+        <ion-icon name="arrow-undo"></ion-icon> Volver
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-datetime locale="es-ES"></ion-datetime>
+<ion-footer>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]= "['/bienvenida']">Confirmar reserva</ion-button>
+    </ion-buttons>
