@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="tertiary">
-    <ion-title>ServiExpress</ion-title>
+    <ion-title class="ion-text-center">ServiExpress</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -29,19 +29,14 @@
   </ion-card>
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar color="medium">
-    <ion-buttons slot="start">
-      <ion-button [routerLink]= "['/registro']">Registrarse</ion-button>
-    </ion-buttons>
 
-    <ion-footer >
-      <ion-toolbar color="medium">
-        <ion-buttons slot="end">
-          <ion-button [routerLink]= "['/cambiarcontr']">Cambiar contraseña</ion-button>
-        </ion-buttons>
-      </ion-toolbar>
-    </ion-footer>
+<ion-button color="tertiary" [routerLink]= "['/registro']">Registrarse
+  <ion-icon slot="start" name="person"></ion-icon>
+</ion-button>
 
-  </ion-toolbar>
-</ion-footer>
+<ion-button color="tertiary" [routerLink]= "['/cambiarcontr']">Cambiar contraseña
+  <ion-icon slot="start" name="settings"></ion-icon>
+</ion-button>
+
+
+

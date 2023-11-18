@@ -1,8 +1,8 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
       <ion-button [routerLink]="['/login']">
-        <ion-icon name="arrow-undo"></ion-icon>
+        <ion-icon name="chevron-back-circle"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-title>Registro</ion-title>
@@ -12,7 +12,7 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Registro</ion-card-title>
+      <ion-card-title>Rellene con sus datos</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <form [formGroup] = "formularioRegistro">
@@ -29,7 +29,7 @@
           <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
         </ion-item>
         <br>
-        <ion-button (click)="guardar()">Registrarse
+        <ion-button (click)="guardar()" color="tertiary">Registrarse
         </ion-button>
       </form>
     </ion-card-content>

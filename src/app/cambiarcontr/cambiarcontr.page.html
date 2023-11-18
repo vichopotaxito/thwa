@@ -2,7 +2,7 @@
   <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
       <ion-button [routerLink]="['/login']">
-        <ion-icon name="arrow-undo"></ion-icon>
+        <ion-icon name="chevron-back-circle"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-title>Cambiar Contraseña</ion-title>
@@ -12,19 +12,15 @@
 <br />
 
 <ion-item>
-  <ion-input label="Nombre" placeholder="Ingrese su nombre"></ion-input>
+  <ion-input label="Nombre"></ion-input>
 </ion-item>
 
-<br />
-
 <ion-item>
-  <ion-input label="Nueva contraseña" type="password" value="12345"></ion-input>
+  <ion-input label="Nueva contraseña" type="password" value=""></ion-input>
 </ion-item>
 
-<br />
-
 <ion-item>
-  <ion-input label="Repita la contraseña" type="password" value="12345"></ion-input>
+  <ion-input label="Repita la contraseña" type="password" value=""></ion-input>
 </ion-item>
 
 <ion-buttons slot="end">
@@ -32,7 +28,6 @@
     <ion-icon name="arrow-undo-outline"></ion-icon> Confirmar cambio
   </ion-button>
 </ion-buttons>
-
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">

@@ -3,19 +3,35 @@
     <ion-title>Reserva de hora</ion-title>
     <ion-buttons slot="start">
       <ion-button [routerLink]="['/bienvenida']">
-        <ion-icon name="arrow-undo"></ion-icon> Volver
+        <ion-icon name="chevron-back-circle"></ion-icon> Volver
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+<br />
 
-<ion-datetime [showDefaultTitle]="true" [showDefaultButtons]="true" doneText="Reserva" cancelText="Cancelar" [isDateEnabled]="isWeekday" locale="es-ES" hourCycle="h12">
+<ion-title class="ion-text-center">Ingrese sus datos</ion-title>
+
+<br />
+
+<ion-item>
+  <ion-input label="Nombre"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-input label="Contraseña" type="password" value=""></ion-input>
+</ion-item>
+
+<br />
+
+<ion-datetime color="tertiary" [showDefaultTitle]="true" [showDefaultButtons]="true" doneText="Reserva" cancelText="Cancelar" [isDateEnabled]="isWeekday" locale="es-ES" hourCycle="h12">
   <span slot="title">Seleccione una fecha de reserva</span>
   <span slot="time-label">Hora</span>
 </ion-datetime>
-<ion-footer>
-  <ion-toolbar color="medium">
-    <ion-buttons slot="start">
-      <ion-button [routerLink]= "['/bienvenida']">Confirmar reserva</ion-button>
-    </ion-buttons>
+
+<ion-button color="tertiary" [routerLink]= "['/bienvenida']">Confirmar reserva
+  <ion-icon slot="start" name="person"></ion-icon>
+</ion-button>
+
+
