@@ -10,7 +10,10 @@
 </ion-header>
 
 
-<ion-datetime locale="es-ES"></ion-datetime>
+<ion-datetime [showDefaultTitle]="true" [showDefaultButtons]="true" doneText="Reserva" cancelText="Cancelar" [isDateEnabled]="isWeekday" locale="es-ES" hourCycle="h12">
+  <span slot="title">Seleccione una fecha de reserva</span>
+  <span slot="time-label">Hora</span>
+</ion-datetime>
 <ion-footer>
   <ion-toolbar color="medium">
     <ion-buttons slot="start">
